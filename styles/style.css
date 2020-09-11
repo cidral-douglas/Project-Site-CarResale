@@ -179,8 +179,35 @@ section.veiculos-destaque .container{
 .vitrine-destaque .carro-img{
     width: 100%;
     padding-top: 100%;
-    border: 8px solid black;
+    border: 8px solid white;
     background-size: 100% 100%;
+}
+
+.vitrine-destaque h2{
+    font-size: 21px;
+    font-style: italic;
+}
+
+.vitrine-destaque p{
+    font-size: 16px;
+    color: #353535;
+}
+
+.vitrine-destaque a{
+    font-size: 21px;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+    background-color: #EB2D2D;
+    position: relative;
+    top: 20px;
+    padding: 10px;
+    border-bottom: 2px solid rgb(70,70,70);
+    border-radius: 3px;
+}
+
+.vitrine-destaque a:hover{
+    background-color: #da2a2a;
 }
 
 /*********************************************************************/
