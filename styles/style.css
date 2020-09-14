@@ -302,6 +302,112 @@ section.servicos-descricao{
 
 /*********************************************************************/
 
+/*****************************SECTION CONTATO***************************/
+
+section.contato{
+    padding: 90px 2%;
+}
+
+section.contato h2{
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+}
+
+section.contato .line{
+    letter-spacing: -2px;
+    margin: 0px 20px;
+}
+
+section.contato form{
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+section.contato .input-wrapper{
+    float: left;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+section.contato input[type=text]{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+    font-style: italic;
+}
+
+section.contato textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 120px;
+    padding: 8px;
+    resize: none;
+    font-style: italic;
+}
+
+section.contato input[type=submit]{
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    cursor: pointer;
+    width: 200px;
+    display: inline-block;
+}
+
+.w100{
+    width: 100%;
+}
+
+.w50{
+    width: 50%;
+}
+
+/*********************************************************************/
+
+/**********************************FOOTER*******************************/
+
+footer{
+    padding: 40px 2%;
+    background-color: #252525;
+}
+
+footer nav{
+    float: left;
+    position: relative;
+    bottom: 10px;
+}
+
+footer nav ul{
+    list-style-type: none;
+} 
+
+footer nav ul li{
+    float: left;
+    font-size: 16px;
+    padding: 0 20px;
+    font-style: italic;
+}
+
+footer nav a{
+    color: white;
+    text-decoration: none;
+}
+
+footer p{
+    float: right;
+    color: white;
+    font-size: 16px;
+    font-style: italic;
+    position: relative;
+    bottom: 10px;
+}
+
+/*********************************************************************/
+
 /**********************************RESPONSIVO***************************/
 
 @media screen and (max-width: 1400px){
@@ -330,6 +436,10 @@ section.servicos-descricao{
     }
 
     section.veiculos-destaque .line{
+        letter-spacing: -5px;
+    }
+
+    section.contato .line{
         letter-spacing: -5px;
     }
 
@@ -377,6 +487,27 @@ section.servicos-descricao{
     .half1, .half2{
         width: 100%;
     }
+
+    section.contato .line{
+        letter-spacing: -7px;
+    }
+
+    .w50{
+        width: 100%;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    footer nav{
+        display: none;
+    }
+
+    footer p{
+        float: none;
+    }
+
     
 }
 
