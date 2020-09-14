@@ -156,13 +156,13 @@ section.veiculos-destaque{
 
 section.veiculos-destaque h2{
     text-align: center;
-    font-size: 27px;
+    font-size: 30px;
     font-style: italic;
 }
 
 section.veiculos-destaque .line{
     letter-spacing: -2px;
-    margin: 0px 15px;
+    margin: 0px 20px;
 }
 
 section.veiculos-destaque .container{
@@ -178,37 +178,127 @@ section.veiculos-destaque .container{
 
 .vitrine-destaque .carro-img{
     width: 100%;
-    padding-top: 100%;
-    border: 8px solid white;
+    padding-top: 80%;
+    border: 25px solid white;
     background-size: 100% 100%;
 }
 
-.vitrine-destaque h2{
-    font-size: 21px;
+.vitrine-destaque .info-carro h2{
+    font-size: 24px;
     font-style: italic;
 }
 
-.vitrine-destaque p{
+.vitrine-destaque .info-carro p{
     font-size: 16px;
     color: #353535;
 }
 
-.vitrine-destaque a{
-    font-size: 21px;
+.vitrine-destaque .info-carro a{ 
+    width: 125px;
+    margin: 20px auto; 
+}
+
+.btn1{
+    display: block;
+    font-size: 18px;
     font-style: italic;
     text-decoration: none;
     color: white;
     background-color: #EB2D2D;
-    position: relative;
-    top: 20px;
     padding: 10px;
     border-bottom: 2px solid rgb(70,70,70);
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
 .vitrine-destaque a:hover{
     background-color: #da2a2a;
 }
+
+/*********************************************************************/
+
+/*****************************SECTION DESCRICAO***********************/
+
+section.servicos-descricao{
+    display: flex;
+}
+
+.half1{
+    text-align: center;
+    width: 50%;
+    padding: 90px 0;
+    background-color: #242424;
+    color: white;
+}
+
+.half1-wrapper{
+    display: inline-block;
+    text-align: left;
+}
+
+.half1-wrapper h2{
+    font-size: 32px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.half1-wrapper ul{
+    margin-top: 20px;
+}
+
+.half1-wrapper ul li{
+    margin-left: 35px;
+    font-size: 21px;
+}
+
+.half1-wrapper a{
+    width: 100px;
+    margin: 30px auto;
+}
+
+.half2{
+    width: 50%;
+    padding: 90px 100px;
+    background-color: #EB2D2D;
+    color: white;
+}
+
+.half2 h2{
+    font-size: 32px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.half2 .depoimento-single{
+    margin-top: 20px;
+}
+
+.half2 .depoimento-single p{
+    font-size: 21px;
+
+}
+
+.navigation{
+    float: left;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.arrows{
+    float: left;
+}
+
+.navigation img{
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.nome-depoimento{
+    float: right;
+    color: #252525;
+    font-size: 23px;
+}
+
 
 /*********************************************************************/
 
@@ -237,6 +327,10 @@ section.veiculos-destaque .container{
 
     header nav.mobile{
         display: block;
+    }
+
+    section.veiculos-destaque .line{
+        letter-spacing: -5px;
     }
 
     
@@ -271,5 +365,43 @@ section.veiculos-destaque .container{
         font-size: 16px;
         left: -52px;
     }
+
+    section.veiculos-destaque .line{
+        letter-spacing: -7px;
+    }
+
+    section.servicos-descricao{
+        flex-direction: column;
+    }
+
+    .half1, .half2{
+        width: 100%;
+    }
     
+}
+
+@media screen and (max-width: 600px){
+
+    section.veiculos-destaque h2{
+        font-size: 28px;
+    }
+
+    section.veiculos-destaque .line{
+        display: none;
+    }
+
+    section.veiculos-destaque .container{
+        text-align: center;
+    }
+
+    .vitrine-destaque{
+        display: inline-block;
+        float:none;
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .vitrine-destaque a{
+        display: inline-block;
+    }
 }
