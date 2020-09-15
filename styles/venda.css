@@ -97,7 +97,6 @@ header.mobile ul li a{
 
 section.venda{
     padding: 90px 2%;
-    min-height: 100%;
 }
 
 section.venda .title{
@@ -107,7 +106,7 @@ section.venda .title{
 }
 
 section.venda .line{
-    letter-spacing: -2px;
+    letter-spacing: -2.5px;
     margin: 0px 20px;
 }
 
@@ -120,12 +119,16 @@ section.venda .line{
     width: 30%;
 }
 
+.search1{
+    width: 90%;
+}
+
 .search1 h2{
     font-size: 21px;
 }
 
 .search1 .barra-preco{
-    width: 300px;
+    width: 100%;
     height: 15px;
     margin-top: 8px;
     border: 1px solid #ccc;
@@ -140,7 +143,8 @@ section.venda .line{
     width: 30%;
     height: 15px;
     border-radius: 20px;
-    background-color: rgb(200,200,200);
+    background: linear-gradient(to bottom, rgb(255,255,255), rgb(200,200,200
+    ));
 }
 
 .pointer-barra{
@@ -157,7 +161,6 @@ section.venda .line{
 
 .valor-pesquisa{
     margin-top: 8px;
-    max-width: 300px;
 }
 
 .valor-pesquisa p{
@@ -234,6 +237,57 @@ section.venda .line{
     background: white;
   }
 
+.vitrine-venda{
+    float: left;
+    width: 70%;
+    text-align: center;
+  }
+
+
+.vitrine-destaque{
+    float: left;
+    width: 33.3%;
+    margin-top: 20px;
+}
+
+.vitrine-destaque .carro-img{
+    width: 100%;
+    padding-top: 80%;
+    border: 25px solid white;
+    background-size: 100% 100%;
+}
+
+.vitrine-destaque .info-carro h2{
+    font-size: 24px;
+    font-style: italic;
+}
+
+.vitrine-destaque .info-carro p{
+    font-size: 16px;
+    color: #353535;
+}
+
+.vitrine-destaque .info-carro a{ 
+    width: 125px;
+    margin: 20px auto; 
+}
+
+.btn1{
+    display: block;
+    font-size: 18px;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+    background-color: #EB2D2D;
+    padding: 10px;
+    border-bottom: 2px solid rgb(70,70,70);
+    border-radius: 5px;
+}
+
+.vitrine-destaque a:hover{
+    background-color: #da2a2a;
+}
+
 /*********************************************************************/
 
 /**********************************FOOTER*******************************/
@@ -303,12 +357,16 @@ footer p{
         display: block;
     }
 
-    section.veiculos-destaque .line{
+    section.venda .line{
         letter-spacing: -5px;
     }
 
     section.contato .line{
         letter-spacing: -5px;
+    }
+
+    .vitrine-destaque{
+        width: 50%;
     }
 
     
@@ -344,7 +402,7 @@ footer p{
         left: -52px;
     }
 
-    section.veiculos-destaque .line{
+    section.venda .line{
         letter-spacing: -7px;
     }
 
@@ -356,12 +414,37 @@ footer p{
         width: 100%;
     }
 
-    section.contato .line{
-        letter-spacing: -7px;
-    }
-
     .w50{
         width: 100%;
+    }
+
+    .sidebar{
+        width: 100%;
+        text-align: center;
+    }
+
+    .search1{
+        display: inline-block;
+    }
+
+    .search2{
+        display: inline-block;
+    }
+
+    .vitrine-venda{
+        text-align: center;
+        width: 100%;
+    }
+
+    .vitrine-destaque{
+        display: inline-block;
+        float:none;
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .vitrine-destaque a{
+        display: inline-block;
     }
 
     footer{
@@ -381,26 +464,17 @@ footer p{
 
 @media screen and (max-width: 600px){
 
-    section.veiculos-destaque h2{
+    section.venda h2{
         font-size: 28px;
     }
 
-    section.veiculos-destaque .line{
+    section.venda .line{
         display: none;
     }
 
-    section.veiculos-destaque .container{
+    section.venda .container{
         text-align: center;
     }
 
-    .vitrine-destaque{
-        display: inline-block;
-        float:none;
-        width: 80%;
-        margin-top: 20px;
-    }
-
-    .vitrine-destaque a{
-        display: inline-block;
-    }
 }
+

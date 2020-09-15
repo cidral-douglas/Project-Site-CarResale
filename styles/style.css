@@ -161,7 +161,7 @@ section.veiculos-destaque h2{
 }
 
 section.veiculos-destaque .line{
-    letter-spacing: -2px;
+    letter-spacing: -2.5px;
     margin: 0px 20px;
 }
 
@@ -315,7 +315,7 @@ section.contato h2{
 }
 
 section.contato .line{
-    letter-spacing: -2px;
+    letter-spacing: -2.5px;
     margin: 0px 20px;
 }
 
