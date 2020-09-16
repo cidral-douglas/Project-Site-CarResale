@@ -12,3 +12,5 @@
 * Projeto desenvolvido no curso de Front-End da Danki Code.
 * Projeto com alterações no CSS para melhor experiência.
 * JavaScript criado apenas para o menu-mobile e para a filtragem de preços na página de vendas.
+* As demais páginas não foram desenvolvidas.
+* A parte de Back-End não foi desenvolvida, pois o curso era apenas de Front-End.
